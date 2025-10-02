@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catering JR – Bay Area Catering Services: American, Italian, and Mexican menus for weddings, corporate, and private events." />
+  <title>Catering JR – Bay Area Catering</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    header { background: #c62828; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { margin: 0; }
+    nav { margin-top: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .lang-btn { background: white; color: #c62828; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px; }
+    section { padding: 50px 20px; }
+    .hero { background: url('https://source.unsplash.com/1600x600/?catering,food') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 2.5em; }
+    .menu-section { background: #f9f9f9; }
+    .menu-section h3 { color: #c62828; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; }
+    .btn { background: #c62828; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Catering JR</h1>
+    <nav>
+      <a href="#about" id="nav-about">About Us</a>
+      <a href="#menus" id="nav-menus">Menus</a>
+      <a href="#contact" id="nav-contact">Contact</a>
+      <button class="lang-btn" onclick="toggleLang()">ES</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 id="hero-title">Delicious Catering for Every Occasion</h2>
+    <p id="hero-sub">Serving the Bay Area – Weddings, Corporate Events, and Parties</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="hero-btn">Request a Quote</a>
+  </section>
+
+  <section id="about">
+    <h2 id="about-title">About Us</h2>
+    <p id="about-text">Catering JR specializes in flavorful, handcrafted dishes that bring people together. From weddings to office events, our catering is designed to impress your guests and make your event unforgettable.</p>
+  </section>
+
+  <section id="menus" class="menu-section">
+    <h2 id="menu-title">Our Menus</h2>
+
+    <h3 id="menu-american">American Cuisine</h3>
+    <p>Burgers, BBQ ribs, wings, mac & cheese, and more.</p>
+
+    <h3 id="menu-italian">Italian Cuisine</h3>
+    <p>Pasta, homemade meatballs, artisan pizzas, risotto, tiramisù, and more.</p>
+
+    <h3 id="menu-mexican">Mexican Cuisine</h3>
+    <p>Birria tacos, pozole, ceviche, esquites, agua chiles, carnitas, and more.</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="menu-btn">Request a Quote</a>
+  </section>
+
+  <section id="contact">
+    <h2 id="contact-title">Contact Us</h2>
+    <p id="contact-text">Phone: (415) 349-6404 | Email: cateringjr04@gmail.com</p>
+    <p>
+      <a href="https://www.tiktok.com/@catering_jr1" target="_blank">TikTok</a> |
+      <a href="https://yelp.to/czPIyPMZGa" target="_blank">Yelp</a>
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="contact-btn">Get My Quote</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Catering JR – Bay Area Catering Services</p>
+  </footer>
+
+  <script>
+    let lang = "en";
+    function toggleLang() {
+      if (lang === "en") {
+        lang = "es";
+        document.getElementById("title").innerText = "Catering JR";
+        document.getElementById("nav-about").innerText = "Nosotros";
+        document.getElementById("nav-menus").innerText = "Menús";
+        document.getElementById("nav-contact").innerText = "Contacto";
+        document.getElementById("hero-title").innerText = "Catering delicioso para cada ocasión";
+        document.getElementById("hero-sub").innerText = "Sirviendo el Área de la Bahía – Bodas, Eventos Corporativos y Fiestas";
+        document.getElementById("hero-btn").innerText = "Solicitar Cotización";
+        document.getElementById("about-title").innerText = "Nosotros";
+        document.getElementById("about-text").innerText = "Catering JR se especializa en platillos artesanales y llenos de sabor que unen a las personas. Desde bodas hasta eventos de oficina, nuestro catering está diseñado para impresionar a sus invitados.";
+        document.getElementById("menu-title").innerText = "Nuestros Menús";
+        document.getElementById("menu-american").innerText = "Cocina Americana";
+        document.getElementById("menu-italian").innerText = "Cocina Italiana";
+        document.getElementById("menu-mexican").innerText = "Cocina Mexicana";
+        document.getElementById("menu-btn").innerText = "Solicitar Cotización";
+        document.getElementById("contact-title").innerText = "Contáctanos";
+        document.getElementById("contact-text").innerText = "Tel: (415) 349-6404 | Correo: cateringjr04@gmail.com";
+        document.getElementById("contact-btn").innerText = "Solicitar Cotización";
+        document.querySelector(".lang-btn").innerText = "EN";
+      } else {
+        lang = "en";
+        document.getElementById("title").innerText = "Catering JR";
+        document.getElementById("nav-about").innerText = "About Us";
+        document.getElementById("nav-menus").innerText = "Menus";
+        document.getElementById("nav-contact").innerText = "Contact";
+        document.getElementById("hero-title").innerText = "Delicious Catering for Every Occasion";
+        document.getElementById("hero-sub").innerText = "Serving the Bay Area – Weddings, Corporate Events, and Parties";
+        document.getElementById("hero-btn").innerText = "Request a Quote";
+        document.getElementById("about-title").innerText = "About Us";
+        document.getElementById("about-text").innerText = "Catering JR specializes in flavorful, handcrafted dishes that bring people together. From weddings to office events, our catering is designed to impress your guests and make your event unforgettable.";
+        document.getElementById("menu-title").innerText = "Our Menus";
+        document.getElementById("menu-american").innerText = "American Cuisine";
+        document.getElementById("menu-italian").innerText = "Italian Cuisine";
+        document.getElementById("menu-mexican").innerText = "Mexican Cuisine";
+        document.getElementById("menu-btn").innerText = "Request a Quote";
+        document.getElementById("contact-title").innerText = "Contact Us";
+        document.getElementById("contact-text").innerText = "Phone: (415) 349-6404 | Email: cateringjr04@gmail.com";
+        document.getElementById("contact-btn").innerText = "Get My Quote";
+        document.querySelector(".lang-btn").innerText = "ES";
+      }
+    }
+  </script>
+</body>
+</html>
