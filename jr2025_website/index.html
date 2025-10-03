@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catering JR – Bay Area’s Trusted Catering</title>
+<meta name="description" content="Catering JR offers American, Mexican, and Italian catering across the Bay Area. Weddings, corporate events, and private parties. Request a free quote.">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>:root { --brand:#c62828; --dark:#111; --muted:#666; --bg:#faf7f6; }
+*{box-sizing:border-box}
+body{margin:0;font-family: 'Inter', Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:var(--bg);color:#222}
+header{position:sticky;top:0;background: #fff9; backdrop-filter: blur(8px); border-bottom:1px solid #eee; z-index:10}
+.header-inner{max-width:1100px;margin:auto; display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand img{width:36px;height:36px;border-radius:8px}
+.nav a{margin:0 10px;text-decoration:none;color:#333;font-weight:600}
+.lang-btn, .btn{border:none;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer}
+.lang-btn{background:#fff;border:1px solid #ddd}
+.btn{background:var(--brand);color:#fff;text-decoration:none;display:inline-block}
+.hero{display:grid;place-items:center;text-align:center;padding:80px 16px;background:linear-gradient(120deg, #fff, #ffe8e6)}
+.hero h1{font-size:40px;margin:8px 0}
+.hero p{color:var(--muted);max-width:680px;margin:0 auto 18px}
+.section{max-width:1100px;margin:auto;padding:48px 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .pad{padding:14px}
+h2{font-size:28px;margin:0 0 14px}
+footer{background:#111;color:#fff;padding:30px 16px;margin-top:40px}
+footer a{color:#ffd6d2}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.testimonial{background:#fff;border-left:4px solid var(--brand);padding:14px;border-radius:10px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.qr{display:flex;gap:20px;align-items:center;justify-content:center}
+.small{color:var(--muted);font-size:14px}
+.service-tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{background:#fff;border:1px solid #eee;border-radius:999px;padding:6px 10px;font-weight:600}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ENQGPXB03P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ENQGPXB03P');
+</script>
+
+<script>if(location.protocol==='http:'){location.href=location.href.replace('http:','https:');}</script>
+</head>
+<body>
+<header><div class="header-inner">
+  <div class="brand"><img src="assets/logo.png" alt="Catering JR logo"><span id="siteName">Catering JR</span></div>
+  <nav class="nav">
+    <a href="#menus" id="navMenus">Menus</a>
+    <a href="#about" id="navAbout">About</a>
+    <a href="#gallery" id="navGallery">Gallery</a>
+    <a href="#contact" id="navContact">Contact</a>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" id="navQuote">Request a Quote</a>
+    <button class="lang-btn" onclick="toggleLang()" id="langBtn">ES</button>
+  </nav>
+</div></header>
+
+<section class="hero"><div>
+  <h1 id="heroTitle">Bay Area’s Trusted Catering – Authentic Flavors, Unforgettable Events.</h1>
+  <p id="heroSub">American, Mexican, and Italian menus crafted with care for weddings, corporate events, and private celebrations across San Francisco, San Jose, Napa, and more.</p>
+  <div class="badges">
+    <span class="tag" id="badgeFresh">Fresh Ingredients</span><span class="tag" id="badgeCustom">Custom Menus</span><span class="tag" id="badgeBay">Serving the Bay Area</span>
+  </div>
+  <div style="margin-top:16px"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" id="heroBtn">Request a Quote</a></div>
+</div></section>
+
+<section id="menus" class="section"><h2 id="menusTitle">Our Featured Menus</h2>
+  <div class="grid">
+    <div class="card"><img src="assets/americanmenu.png" alt="American cuisine catering"><div class="pad">
+      <h3 id="amTitle">American Cuisine</h3><p id="amDesc">Crowd-pleasing classics: sliders, wings, BBQ ribs, mac & cheese, and more.</p>
+      <div class="badges"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" id="amQuote">Request a Quote</a>
+      <a class="lang-btn" href="docs/CateringJR_American_Menu.pdf" target="_blank" id="amDownload">📄 Download Menu</a></div>
+    </div></div>
+    <div class="card"><img src="assets/ITALIAN.png" alt="Italian cuisine catering"><div class="pad">
+      <h3 id="itTitle">Italian Cuisine</h3><p id="itDesc">Pasta, risotto, artisan pizzas, and classic Italian desserts.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" id="itQuote">Request a Quote</a>
+    </div></div>
+    <div class="card"><img src="assets/premium_seafood.png" alt="Mexican cuisine catering"><div class="pad">
+      <h3 id="mxTitle">Mexican Cuisine</h3><p id="mxDesc">Birria tacos, pozole, ceviche shooters, agua chiles, and more.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" id="mxQuote">Request a Quote</a>
+    </div></div>
+  </div>
+  <div style="margin-top:16px"><a class="lang-btn" href="docs/CateringJR_Full_Menu_Selection.pdf" target="_blank" id="fullPdf">📄 Download Full Menu Selection</a></div>
+</section>
+
+<section class="section" id="about">
+  <h2 id="aboutTitle">About Catering JR</h2>
+  <p id="aboutText">Catering JR was born from a simple love: the joy of cooking for others. Food is more than a meal—it’s an experience that brings people together. I started this catering business to share bold, authentic flavors and give people a chance to enjoy food the way I do—with excitement, curiosity, and appreciation. Every dish is crafted with care, creativity, and heart.</p>
+</section>
+
+<section class="section" id="gallery"><h2 id="galleryTitle">Gallery</h2>
+  <div class="grid gallery">
+    <img src="assets/grilled_steak.png" alt="Grilled steaks catering">
+    <img src="assets/breakfast_buffet.png" alt="Breakfast & brunch station">
+    <img src="assets/sandwich_menu.png" alt="Gourmet sandwiches">
+    <img src="assets/seafood_menu.png" alt="Seafood menu">
+    <img src="assets/americanmenu.png" alt="American menu board">
+    <img src="assets/ITALIAN.png" alt="Italian menu board">
+  </div>
+</section>
+
+<section class="section"><h2 id="serviceTitle">Service Areas</h2>
+  <div class="service-tags">
+    <span class="tag">San Francisco</span><span class="tag">South San Francisco</span><span class="tag">San Bruno</span><span class="tag">San Jose</span><span class="tag">Pacifica</span><span class="tag">Napa</span><span class="tag">Calistoga</span><span class="tag">Bay Area</span>
+  </div>
+</section>
+
+<section class="section"><h2 id="testTitle">Customer Testimonials</h2>
+  <div class="grid">
+    <div class="testimonial">★★★★★ “Catering JR made our wedding unforgettable. The food was absolutely delicious and the team was professional and friendly.” — <i>Mariana G., San Francisco</i></div>
+    <div class="testimonial">★★★★★ “We hired Catering JR for a corporate event and they exceeded expectations. Presentation and flavors were top-notch.” — <i>James L., San Jose</i></div>
+    <div class="testimonial">★★★★★ “Authentic flavors, beautiful setup, and fantastic service. They truly care about making your event special.” — <i>Ana R., Napa</i></div>
+  </div>
+</section>
+
+<section class="section"><h2 id="qrTitle">🤝 Plan Your Event – Scan & Book</h2>
+  <div class="qr"><img src="assets/quote_qr.png" alt="QR to request a quote" width="160" height="160">
+    <div class="small" id="qrHelp">Open your phone camera and point it at the QR to request a quote instantly.</div></div>
+</section>
+
+<section class="section" id="contact"><h2 id="contactTitle">Contact</h2>
+  <p id="contactText">Phone: (415) 349-6404 • Email: cateringjr04@gmail.com • Web: www.cateringjr.com</p>
+  <div class="badges"><a href="https://www.tiktok.com/@catering_jr1" target="_blank">TikTok</a> <a href="https://yelp.to/czPIyPMZGa" target="_blank">Yelp</a></div>
+</section>
+
+<footer><div class="section" style="padding:0"><p>&copy; 2025 Catering JR • www.cateringjr.com</p></div></footer>
+
+<script>
+let lang='en';
+function toggleLang(){
+  const ES={siteName:'Catering JR',navMenus:'Menús',navAbout:'Nosotros',navGallery:'Galería',navContact:'Contacto',navQuote:'Solicitar Cotización',
+    heroTitle:'El catering de confianza del Área de la Bahía – Sabores auténticos, eventos inolvidables.',
+    heroSub:'Menús Americanos, Mexicanos e Italianos para bodas, empresas y celebraciones privadas en San Francisco, San José, Napa y más.',
+    badgeFresh:'Ingredientes Frescos',badgeCustom:'Menús Personalizados',badgeBay:'Servimos el Área de la Bahía',
+    menusTitle:'Menús Destacados',
+    amTitle:'Cocina Americana',amDesc:'Favoritos para todos: sliders, alitas, costillas BBQ, mac & cheese y más.',amQuote:'Solicitar Cotización',amDownload:'📄 Descargar Menú',
+    itTitle:'Cocina Italiana',itDesc:'Pasta, risotto, pizzas artesanales y postres clásicos.',itQuote:'Solicitar Cotización',
+    mxTitle:'Cocina Mexicana',mxDesc:'Birria, pozole, ceviche, aguachiles y más.',mxQuote:'Solicitar Cotización',
+    fullPdf:'📄 Descargar Menú Completo',aboutTitle:'Sobre Catering JR',
+    aboutText:'Catering JR nació del amor por cocinar para los demás. La comida es más que un plato: une a las personas. Compartimos sabores auténticos con dedicación y corazón.',
+    galleryTitle:'Galería',serviceTitle:'Zonas de Servicio',testTitle:'Opiniones de Clientes',
+    qrTitle:'🤝 Planea tu Evento – Escanea y Reserva',qrHelp:'Apunta la cámara al QR para solicitar tu cotización.',
+    contactTitle:'Contacto',contactText:'Tel: (415) 349-6404 • Correo: cateringjr04@gmail.com • Web: www.cateringjr.com'};
+  const EN={siteName:'Catering JR',navMenus:'Menus',navAbout:'About',navGallery:'Gallery',navContact:'Contact',navQuote:'Request a Quote',
+    heroTitle:'Bay Area’s Trusted Catering – Authentic Flavors, Unforgettable Events.',
+    heroSub:'American, Mexican, and Italian menus crafted with care for weddings, corporate events, and private celebrations across San Francisco, San Jose, Napa, and more.',
+    badgeFresh:'Fresh Ingredients',badgeCustom:'Custom Menus',badgeBay:'Serving the Bay Area',
+    menusTitle:'Our Featured Menus',
+    amTitle:'American Cuisine',amDesc:'Crowd-pleasing classics: sliders, wings, BBQ ribs, mac & cheese, and more.',amQuote:'Request a Quote',amDownload:'📄 Download Menu',
+    itTitle:'Italian Cuisine',itDesc:'Pasta, risotto, artisan pizzas, and classic Italian desserts.',itQuote:'Request a Quote',
+    mxTitle:'Mexican Cuisine',mxDesc:'Birria tacos, pozole, ceviche shooters, agua chiles, and more.',mxQuote:'Request a Quote',
+    fullPdf:'📄 Download Full Menu Selection',aboutTitle:'About Catering JR',
+    aboutText:'Catering JR was born from a simple love: the joy of cooking for others. We share bold, authentic flavors with care, creativity, and heart.',
+    galleryTitle:'Gallery',serviceTitle:'Service Areas',testTitle:'Customer Testimonials',
+    qrTitle:'🤝 Plan Your Event – Scan & Book',qrHelp:'Open your phone camera and point it at the QR to request a quote instantly.',
+    contactTitle:'Contact',contactText:'Phone: (415) 349-6404 • Email: cateringjr04@gmail.com • Web: www.cateringjr.com'};
+  const L=(lang==='en')?ES:EN; lang=(lang==='en')?'es':'en';
+  function set(id, text){ if(document.getElementById(id)) document.getElementById(id).innerText=text; }
+  set('siteName',L.siteName); set('navMenus',L.navMenus); set('navAbout',L.navAbout); set('navGallery',L.navGallery); set('navContact',L.navContact); set('navQuote',L.navQuote);
+  set('heroTitle',L.heroTitle); set('heroSub',L.heroSub); set('badgeFresh',L.badgeFresh); set('badgeCustom',L.badgeCustom); set('badgeBay',L.badgeBay); set('heroBtn',L.navQuote);
+  set('menusTitle',L.menusTitle); set('amTitle',L.amTitle); set('amDesc',L.amDesc); set('amQuote',L.amQuote); set('amDownload',L.amDownload);
+  set('itTitle',L.itTitle); set('itDesc',L.itDesc); set('itQuote',L.itQuote);
+  set('mxTitle',L.mxTitle); set('mxDesc',L.mxDesc); set('mxQuote',L.mxQuote);
+  set('fullPdf',L.fullPdf); set('aboutTitle',L.aboutTitle); set('aboutText',L.aboutText);
+  set('galleryTitle',L.galleryTitle); set('serviceTitle',L.serviceTitle); set('testTitle',L.testTitle);
+  set('qrTitle',L.qrTitle); set('qrHelp',L.qrHelp); set('contactTitle',L.contactTitle); set('contactText',L.contactText);
+  document.getElementById('langBtn').innerText=(lang==='es')?'EN':'ES';
+}
+</script>
+</body></html>
