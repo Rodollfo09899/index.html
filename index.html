@@ -45,28 +45,64 @@
   <section class="hero">
     <h2 id="hero-title">Delicious Catering for Every Occasion</h2>
     <p id="hero-sub">Serving the Bay Area – Weddings, Corporate Events, and Parties</p>
+    <a href="#quote" class="btn">Get a Quote</a>
+    <a href="/menus.html" class="btn-outline">View Menus</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="hero-btn">Request a Quote</a>
   </section>
+  <style>
+.hero {
+  min-height: 70vh;
+  background-image: url('images/hero.webp');
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+.btn {
+  background: #b88a2b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 6px;
+}
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 6px;
+}
+</style>
 
   <section id="about">
     <h2 id="about-title">About Us</h2>
     <p id="about-text">Catering JR specializes in flavorful, handcrafted dishes that bring people together. From weddings to office events, our catering is designed to impress your guests and make your event unforgettable.</p>
+ 
   </section>
 
-  <section id="menus" class="menu-section">
-    <h2 id="menu-title">Our Menus</h2>
+  <section id="menus" style="text-align:center; padding: 40px;">
+  <h2>Popular Menus</h2>
+  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px;">
+    <div>
+      <img src="images/mexican-menu.webp" alt="Mexican taco bar" width="300">
+      <p><strong>Mexican Menu</strong></p>
+    </div>
+    <div>
+      <img src="images/italian-menu.webp" alt="Italian pasta tray" width="300">
+      <p><strong>Italian Menu</strong></p>
+    </div>
+    <div>
+      <img src="images/american-menu.webp" alt="American BBQ platter" width="300">
+      <p><strong>American Menu</strong></p>
+    </div>
+  </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="menu-btn">Request a Quote</a>
 
-    <h3 id="menu-american">American Cuisine</h3>
-    <p>Burgers, BBQ ribs, wings, mac & cheese, and more.</p>
-
-    <h3 id="menu-italian">Italian Cuisine</h3>
-    <p>Pasta, homemade meatballs, artisan pizzas, risotto, tiramisù, and more.</p>
-
-    <h3 id="menu-mexican">Mexican Cuisine</h3>
-    <p>Birria tacos, pozole, ceviche, esquites, agua chiles, carnitas, and more.</p>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="menu-btn">Request a Quote</a>
-  </section>
+</section>
 
   <section id="contact">
     <h2 id="contact-title">Contact Us</h2>
