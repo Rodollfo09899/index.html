@@ -1,205 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENQGPXB03P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ENQGPXB03P');
-  </script>
+<section id="menus" class="menu-section">
+  <div class="container">
+    <h2 id="menu-title">Popular Menus</h2>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Catering JR – Bay Area Catering Services: American, Italian, Mexican, Indian and Seafood menus for weddings, corporate, and private events." />
-  <title>Catering JR – Bay Area Catering</title>
-
-  <style>
-    :root { --brand:#c62828; --accent:#b88a2b; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial, sans-serif; color:#222; background:#fff; scroll-behavior:smooth; }
-
-    header { background:var(--brand); color:#fff; padding:16px 20px; position:sticky; top:0; z-index:1000; }
-    header .wrap { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    header h1 { margin:0; font-size:1.25rem; }
-    nav a { color:#fff; margin:0 8px; text-decoration:none; font-weight:700; }
-    .lang-btn { background:#fff; color:var(--brand); border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
-
-    .hero {
-      min-height:60vh;
-      /* using your existing PNG; swap to any image under image.jr */
-      background-image:url('/image.jr/americanmenu.png');
-      background-size:cover; background-position:center;
-      display:grid; place-items:center; text-align:center; color:#fff; padding:80px 20px;
-    }
-    .hero h2 { font-size:clamp(28px,4vw,44px); margin:0 0 10px; }
-    .hero p  { font-size:clamp(16px,2.5vw,20px); margin:0 0 18px; }
-    .btn { background:var(--accent); color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none; display:inline-block; font-weight:700; }
-    .btn-outline { border:1px solid #fff; color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none; margin-left:8px; }
-
-    section { padding:48px 20px; }
-    .container { max-width:1100px; margin:0 auto; }
-
-    .menu-section { background:#f9f9f9; }
-    .menu-section h2 { color:var(--brand); margin-top:0; text-align:center; }
-
-    .menu-cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-top:16px; }
-    .card { display:block; background:#fff; border:1px solid #eee; border-radius:12px; overflow:hidden; color:#222; text-decoration:none; }
-    .card img { width:100%; height:220px; object-fit:cover; display:block; }
-    .card span { display:block; padding:10px 12px; font-weight:700; }
-
-    footer { background:#333; color:#fff; text-align:center; padding:20px; }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="wrap">
-      <h1 id="title">Catering JR</h1>
-      <nav>
-        <!-- gallery you already added -->
-        <a href="/menu-gallery.html" class="btn">Browse Menus & Photos</a>
-        <a href="#about" id="nav-about">About Us</a>
-        <a href="#menus" id="nav-menus">Menus</a>
-        <a href="#contact" id="nav-contact">Contact</a>
-        <button class="lang-btn" onclick="toggleLang()">ES</button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2 id="hero-title">Delicious Catering for Every Occasion</h2>
-      <p id="hero-sub">Serving the Bay Area – Weddings, Corporate Events, and Parties</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="hero-btn">Request a Quote</a>
-        <a href="/menu-gallery.html" class="btn-outline">View Gallery</a>
-    </div>
-  </section>
-
-  <!-- MENUS (using your ORIGINAL file names/locations) -->
-  <section id="menus" class="menu-section">
-    <div class="container">
-      <h2 id="menu-title">Popular Menus</h2>
-      <div class="menu-cards">
-        <a class="card" href="/image.jr/americanmenu.png" target="_blank" aria-label="American Menu">
+    <div class="menu-cards">
+      <!-- American -->
+      <a class="card" href="/images/americanmenu-gallery.webp" target="_blank" aria-label="American Menu">
+        <picture>
+          <source srcset="/images/americanmenu-card.webp" type="image/webp">
           <img src="/image.jr/americanmenu.png" alt="American Menu" loading="lazy">
-          <span id="menu-american">American</span>
-        </a>
+        </picture>
+        <span id="menu-american">American</span>
+      </a>
 
-        <!-- italian.png is at repo root in your screenshot.
-             If you move it into image.jr, change src/href to /image.jr/italian.png -->
-        <a class="card" href="/italian.png" target="_blank" aria-label="Italian Menu">
+      <!-- Italian (fallback is at repo root) -->
+      <a class="card" href="/images/italian-gallery.webp" target="_blank" aria-label="Italian Menu">
+        <picture>
+          <source srcset="/images/italian-card.webp" type="image/webp">
           <img src="/italian.png" alt="Italian Menu" loading="lazy">
-          <span id="menu-italian">Italian</span>
-        </a>
+        </picture>
+        <span id="menu-italian">Italian</span>
+      </a>
 
-        <a class="card" href="/image.jr/Indian%20menu.png" target="_blank" aria-label="Indian Menu">
+      <!-- Indian -->
+      <a class="card" href="/images/indian-menu-gallery.webp" target="_blank" aria-label="Indian Menu">
+        <picture>
+          <source srcset="/images/indian-menu-card.webp" type="image/webp">
           <img src="/image.jr/Indian%20menu.png" alt="Indian Menu" loading="lazy">
-          <span id="menu-mexican">Indian</span>
-        </a>
+        </picture>
+        <span id="menu-mexican">Indian</span>
+      </a>
 
-        <a class="card" href="/image.jr/seafood.png" target="_blank" aria-label="Seafood Menu">
+      <!-- Seafood -->
+      <a class="card" href="/images/seafood-gallery.webp" target="_blank" aria-label="Seafood Menu">
+        <picture>
+          <source srcset="/images/seafood-card.webp" type="image/webp">
           <img src="/image.jr/seafood.png" alt="Seafood Menu" loading="lazy">
-          <span>Seafood</span>
-        </a>
+        </picture>
+        <span>Seafood</span>
+      </a>
 
-        <a class="card" href="/image.jr/buffetss.png" target="_blank" aria-label="Buffets">
+      <!-- Buffets -->
+      <a class="card" href="/images/buffetss-gallery.webp" target="_blank" aria-label="Buffets">
+        <picture>
+          <source srcset="/images/buffetss-card.webp" type="image/webp">
           <img src="/image.jr/buffetss.png" alt="Buffets" loading="lazy">
-          <span>Buffets</span>
-        </a>
+        </picture>
+        <span>Buffets</span>
+      </a>
 
-        <a class="card" href="/image.jr/grillee%20and%20steak.png" target="_blank" aria-label="Grilled & Steak">
+      <!-- Grilled & Steak -->
+      <a class="card" href="/images/grillee-and-steak-gallery.webp" target="_blank" aria-label="Grilled &amp; Steak">
+        <picture>
+          <source srcset="/images/grillee-and-steak-card.webp" type="image/webp">
           <img src="/image.jr/grillee%20and%20steak.png" alt="Grilled and Steak" loading="lazy">
-          <span>Grilled &amp; Steak</span>
-        </a>
+        </picture>
+        <span>Grilled &amp; Steak</span>
+      </a>
 
-        <a class="card" href="/image.jr/sanwhcih.png" target="_blank" aria-label="Sandwich">
+      <!-- Sandwich -->
+      <a class="card" href="/images/sanwhcih-gallery.webp" target="_blank" aria-label="Sandwich">
+        <picture>
+          <source srcset="/images/sanwhcih-card.webp" type="image/webp">
           <img src="/image.jr/sanwhcih.png" alt="Sandwich" loading="lazy">
-          <span>Sandwich</span>
-        </a>
+        </picture>
+        <span>Sandwich</span>
+      </a>
 
-        <a class="card" href="/image.jr/Premiun%20Seafood.png" target="_blank" aria-label="Premium Seafood">
+      <!-- Premium Seafood -->
+      <a class="card" href="/images/premiun-seafood-gallery.webp" target="_blank" aria-label="Premium Seafood">
+        <picture>
+          <source srcset="/images/premiun-seafood-card.webp" type="image/webp">
           <img src="/image.jr/Premiun%20Seafood.png" alt="Premium Seafood" loading="lazy">
-          <span>Premium Seafood</span>
-        </a>
-      </div>
-
-      <p style="text-align:center; margin-top:18px">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header"
-           target="_blank" class="btn" id="menu-btn">Request a Quote</a>
-        <a href="/menu-gallery.html" class="btn-outline">Open Full Gallery</a>
-      </p>
+        </picture>
+        <span>Premium Seafood</span>
+      </a>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <h2 id="about-title">About Us</h2>
-      <p id="about-text">
-        Catering JR specializes in flavorful, handcrafted dishes that bring people together.
-        From weddings to office events, our catering is designed to impress your guests and make your event unforgettable.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2 id="contact-title">Contact Us</h2>
-      <p id="contact-text">Phone: <a href="tel:+14153496404">(415) 349-6404</a> | Email: <a href="mailto:cateringjr04@gmail.com">cateringjr04@gmail.com</a></p>
-      <p>
-        <a href="https://www.tiktok.com/@catering_jr1" target="_blank" rel="noopener">TikTok</a> |
-        <a href="https://yelp.to/czPIyPMZGa" target="_blank" rel="noopener">Yelp</a>
-      </p>
+    <p style="text-align:center; margin-top:18px">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header"
-         target="_blank" class="btn" id="contact-btn">Get My Quote</a>
-    </div>
-  </section>
+         target="_blank" class="btn" id="menu-btn">Request a Quote</a>
+      <a href="/menu-gallery.html" class="btn-outline">Open Full Gallery</a>
+    </p>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Catering JR – Bay Area Catering Services</p>
-  </footer>
-
-  <script>
-    let lang = "en";
-    function toggleLang() {
-      if (lang === "en") {
-        lang = "es";
-        document.getElementById("title").innerText = "Catering JR";
-        document.getElementById("nav-about").innerText = "Nosotros";
-        document.getElementById("nav-menus").innerText = "Menús";
-        document.getElementById("nav-contact").innerText = "Contacto";
-        document.getElementById("hero-title").innerText = "Catering delicioso para cada ocasión";
-        document.getElementById("hero-sub").innerText = "Sirviendo el Área de la Bahía – Bodas, Eventos Corporativos y Fiestas";
-        document.getElementById("hero-btn").innerText = "Solicitar Cotización";
-        document.getElementById("about-title").innerText = "Nosotros";
-        document.getElementById("about-text").innerText = "Catering JR se especializa en platillos artesanales y llenos de sabor que unen a las personas. Desde bodas hasta eventos de oficina, nuestro catering está diseñado para impresionar a sus invitados.";
-        document.getElementById("menu-title").innerText = "Nuestros Menús";
-        document.getElementById("menu-american").innerText = "Cocina Americana";
-        document.getElementById("menu-italian").innerText = "Cocina Italiana";
-        document.getElementById("menu-mexican").innerText = "Cocina India";
-        document.getElementById("menu-btn").innerText = "Solicitar Cotización";
-        document.getElementById("contact-title").innerText = "Contáctanos";
-        document.getElementById("contact-text").innerText = "Tel: (415) 349-6404 | Correo: cateringjr04@gmail.com";
-        document.getElementById("contact-btn").innerText = "Solicitar Cotización";
-        document.querySelector(".lang-btn").innerText = "EN";
-      } else {
-        lang = "en";
-        document.getElementById("title").innerText = "Catering JR";
-        document.getElementById("nav-about").innerText = "About Us";
-        document.getElementById("nav-menus").innerText = "Menus";
-        document.getElementById("nav-contact").innerText = "Contact";
-        document.getElementById("hero-title").innerText = "Delicious Catering for Every Occasion";
-        document.getElementById("hero-sub").innerText = "Serving the Bay Area – Weddings, Corporate Events, and Parties";
-        document.getElementById("hero-btn").innerText = "Request a Quote";
-        document.getElementById("about-title").innerText = "About Us";
-        document.getElementById("about-text").innerText = "Catering JR specializes in flavorful, handcrafted dishes that bring people together. From weddings to office events, our catering is designed to impress your guests and make your event unforgettable.";
-        document.getElementById("menu-title").innerText = "Popular Menus";
-        document.getElementById("menu-american").innerText = "American";
-        document.getElementById("menu-italian").innerText = "Italian";
-        document.getElementById("menu-mexican").innerText = "Indian";
-        document.getElementById("menu-btn").innerText = "Request a Quote";
-        document.getElementById("contact-tit
