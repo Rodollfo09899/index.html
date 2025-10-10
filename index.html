@@ -17,39 +17,39 @@
 
   <style>
     :root { --brand:#c62828; --accent:#b88a2b; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; color:#222; background:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, sans-serif; color:#222; background:#fff; scroll-behavior:smooth; }
 
-    header { background: var(--brand); color: #fff; padding: 16px 20px; position: sticky; top: 0; z-index: 1000; }
-    header .wrap { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    header h1 { margin: 0; font-size: 1.25rem; letter-spacing:.5px; }
-    nav a { color: white; margin: 0 8px; text-decoration: none; font-weight: bold; }
-    .lang-btn { background: #fff; color: var(--brand); border: none; padding: 6px 10px; cursor: pointer; border-radius: 6px; }
+    header { background:var(--brand); color:#fff; padding:16px 20px; position:sticky; top:0; z-index:1000; }
+    header .wrap { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    header h1 { margin:0; font-size:1.25rem; }
+    nav a { color:#fff; margin:0 8px; text-decoration:none; font-weight:700; }
+    .lang-btn { background:#fff; color:var(--brand); border:none; padding:6px 10px; border-radius:6px; cursor:pointer; }
 
     .hero {
-      min-height: 60vh;
-      background-image: url('/images/americanmenu-gallery.webp'); /* swap to a hero photo later if you like */
-      background-size: cover; background-position: center;
-      display: grid; place-items: center; text-align: center; color: white; padding: 80px 20px;
+      min-height:60vh;
+      /* using your existing PNG; swap to any image under image.jr */
+      background-image:url('/image.jr/americanmenu.png');
+      background-size:cover; background-position:center;
+      display:grid; place-items:center; text-align:center; color:#fff; padding:80px 20px;
     }
-    .hero h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 10px; }
-    .hero p { margin: 0 0 18px; font-size: clamp(16px, 2.5vw, 20px); }
-    .btn { background: var(--accent); color: white; padding: 12px 18px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight:700; }
+    .hero h2 { font-size:clamp(28px,4vw,44px); margin:0 0 10px; }
+    .hero p  { font-size:clamp(16px,2.5vw,20px); margin:0 0 18px; }
+    .btn { background:var(--accent); color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none; display:inline-block; font-weight:700; }
     .btn-outline { border:1px solid #fff; color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none; margin-left:8px; }
 
-    section { padding: 48px 20px; }
-    .container { max-width: 1100px; margin: 0 auto; }
+    section { padding:48px 20px; }
+    .container { max-width:1100px; margin:0 auto; }
 
-    .menu-section { background: #f9f9f9; }
-    .menu-section h2 { color: var(--brand); margin-top:0; text-align:center; }
+    .menu-section { background:#f9f9f9; }
+    .menu-section h2 { color:var(--brand); margin-top:0; text-align:center; }
 
-    .menu-cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-top: 16px; }
-    .card { display:block; background:#fff; border-radius:12px; overflow:hidden; text-decoration:none; color:#222; border:1px solid #eee; }
+    .menu-cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin-top:16px; }
+    .card { display:block; background:#fff; border:1px solid #eee; border-radius:12px; overflow:hidden; color:#222; text-decoration:none; }
     .card img { width:100%; height:220px; object-fit:cover; display:block; }
     .card span { display:block; padding:10px 12px; font-weight:700; }
 
-    footer { background: #333; color: white; text-align: center; padding: 20px; }
-    a[href^="tel:"]{ color:#fff; }
+    footer { background:#333; color:#fff; text-align:center; padding:20px; }
   </style>
 </head>
 
@@ -58,6 +58,7 @@
     <div class="wrap">
       <h1 id="title">Catering JR</h1>
       <nav>
+        <!-- gallery you already added -->
         <a href="/menu-gallery.html" class="btn">Browse Menus & Photos</a>
         <a href="#about" id="nav-about">About Us</a>
         <a href="#menus" id="nav-menus">Menus</a>
@@ -73,45 +74,54 @@
       <h2 id="hero-title">Delicious Catering for Every Occasion</h2>
       <p id="hero-sub">Serving the Bay Area – Weddings, Corporate Events, and Parties</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScJe4J4QA3Z1OSqBtZJTDDFtzAAnfK9X_WR_PrC9qjGhi3uXw/viewform?usp=header" target="_blank" class="btn" id="hero-btn">Request a Quote</a>
-      <a href="/menu-gallery.html" class="btn-outline">View Gallery</a>
+        <a href="/menu-gallery.html" class="btn-outline">View Gallery</a>
     </div>
   </section>
 
-  <!-- MENUS -->
+  <!-- MENUS (using your ORIGINAL file names/locations) -->
   <section id="menus" class="menu-section">
     <div class="container">
       <h2 id="menu-title">Popular Menus</h2>
       <div class="menu-cards">
-        <a class="card" href="/images/americanmenu-gallery.webp" target="_blank" aria-label="American Menu">
-          <img src="/images/americanmenu-card.webp" alt="American Menu" loading="lazy">
+        <a class="card" href="/image.jr/americanmenu.png" target="_blank" aria-label="American Menu">
+          <img src="/image.jr/americanmenu.png" alt="American Menu" loading="lazy">
           <span id="menu-american">American</span>
         </a>
-        <a class="card" href="/images/italian-gallery.webp" target="_blank" aria-label="Italian Menu">
-          <img src="/images/italian-card.webp" alt="Italian Menu" loading="lazy">
+
+        <!-- italian.png is at repo root in your screenshot.
+             If you move it into image.jr, change src/href to /image.jr/italian.png -->
+        <a class="card" href="/italian.png" target="_blank" aria-label="Italian Menu">
+          <img src="/italian.png" alt="Italian Menu" loading="lazy">
           <span id="menu-italian">Italian</span>
         </a>
-        <a class="card" href="/images/indian-menu-gallery.webp" target="_blank" aria-label="Indian Menu">
-          <img src="/images/indian-menu-card.webp" alt="Indian Menu" loading="lazy">
+
+        <a class="card" href="/image.jr/Indian%20menu.png" target="_blank" aria-label="Indian Menu">
+          <img src="/image.jr/Indian%20menu.png" alt="Indian Menu" loading="lazy">
           <span id="menu-mexican">Indian</span>
         </a>
-        <a class="card" href="/images/seafood-gallery.webp" target="_blank" aria-label="Seafood Menu">
-          <img src="/images/seafood-card.webp" alt="Seafood Menu" loading="lazy">
+
+        <a class="card" href="/image.jr/seafood.png" target="_blank" aria-label="Seafood Menu">
+          <img src="/image.jr/seafood.png" alt="Seafood Menu" loading="lazy">
           <span>Seafood</span>
         </a>
-        <a class="card" href="/images/buffetss-gallery.webp" target="_blank" aria-label="Buffets">
-          <img src="/images/buffetss-card.webp" alt="Buffets" loading="lazy">
+
+        <a class="card" href="/image.jr/buffetss.png" target="_blank" aria-label="Buffets">
+          <img src="/image.jr/buffetss.png" alt="Buffets" loading="lazy">
           <span>Buffets</span>
         </a>
-        <a class="card" href="/images/grillee-and-steak-gallery.webp" target="_blank" aria-label="Grilled & Steak">
-          <img src="/images/grillee-and-steak-card.webp" alt="Grilled and Steak" loading="lazy">
+
+        <a class="card" href="/image.jr/grillee%20and%20steak.png" target="_blank" aria-label="Grilled & Steak">
+          <img src="/image.jr/grillee%20and%20steak.png" alt="Grilled and Steak" loading="lazy">
           <span>Grilled &amp; Steak</span>
         </a>
-        <a class="card" href="/images/sanwhcih-gallery.webp" target="_blank" aria-label="Sandwich">
-          <img src="/images/sanwhcih-card.webp" alt="Sandwich" loading="lazy">
+
+        <a class="card" href="/image.jr/sanwhcih.png" target="_blank" aria-label="Sandwich">
+          <img src="/image.jr/sanwhcih.png" alt="Sandwich" loading="lazy">
           <span>Sandwich</span>
         </a>
-        <a class="card" href="/images/premiun-seafood-gallery.webp" target="_blank" aria-label="Premium Seafood">
-          <img src="/images/premiun-seafood-card.webp" alt="Premium Seafood" loading="lazy">
+
+        <a class="card" href="/image.jr/Premiun%20Seafood.png" target="_blank" aria-label="Premium Seafood">
+          <img src="/image.jr/Premiun%20Seafood.png" alt="Premium Seafood" loading="lazy">
           <span>Premium Seafood</span>
         </a>
       </div>
@@ -192,12 +202,4 @@
         document.getElementById("menu-italian").innerText = "Italian";
         document.getElementById("menu-mexican").innerText = "Indian";
         document.getElementById("menu-btn").innerText = "Request a Quote";
-        document.getElementById("contact-title").innerText = "Contact Us";
-        document.getElementById("contact-text").innerText = "Phone: (415) 349-6404 | Email: cateringjr04@gmail.com";
-        document.getElementById("contact-btn").innerText = "Get My Quote";
-        document.querySelector(".lang-btn").innerText = "ES";
-      }
-    }
-  </script>
-</body>
-</html>
+        document.getElementById("contact-tit
