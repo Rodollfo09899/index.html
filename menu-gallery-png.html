@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catering JR — Menu Gallery (PNG fallback)</title>
+  <meta name="description" content="PNG-based gallery that points to existing files in /image.jr for quick fix.">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#0b0b0b; color:#fff; }
+    header { padding: 24px; text-align:center; }
+    h1 { margin: 0; font-weight: 700; letter-spacing: .5px; }
+    .grid { display:grid; gap: 16px; padding: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 1200px; margin: 0 auto 48px; }
+    .card { display:block; background:#111; border-radius:16px; overflow:hidden; text-decoration:none; color:#fff; box-shadow: 0 4px 20px rgba(0,0,0,.25);}
+    .card img { width:100%; height: 220px; object-fit: cover; display:block; }
+    .card span { display:block; padding: 12px 14px; font-weight:600; text-transform:capitalize; }
+    footer { text-align:center; padding: 24px; color:#bbb; }
+    .logo { width: 64px; height:64px; border-radius:8px; background:#fff; display:inline-grid; place-items:center; color:#000; font-weight:900; margin-bottom:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">JR</div>
+    <h1>Menu Gallery (PNG Fallback)</h1>
+    <p>This version points to your existing PNGs. Replace with WebP later.</p>
+  </header>
+  <main class="grid">
+    <a class="card" href="/image.jr/americanmenu.png" target="_blank"><img src="/image.jr/americanmenu.png" alt="american"><span>american</span></a>
+    <a class="card" href="/italian.png" target="_blank"><img src="/italian.png" alt="italian"><span>italian</span></a>
+    <a class="card" href="/image.jr/Indian%20menu.png" target="_blank"><img src="/image.jr/Indian%20menu.png" alt="indian"><span>indian</span></a>
+    <a class="card" href="/image.jr/seafood.png" target="_blank"><img src="/image.jr/seafood.png" alt="seafood"><span>seafood</span></a>
+    <a class="card" href="/image.jr/buffetss.png" target="_blank"><img src="/image.jr/buffetss.png" alt="buffetss"><span>buffetss</span></a>
+    <a class="card" href="/image.jr/grillee%20and%20steak.png" target="_blank"><img src="/image.jr/grillee%20and%20steak.png" alt="grillee and steak"><span>grillee and steak</span></a>
+    <a class="card" href="/image.jr/sanwhcih.png" target="_blank"><img src="/image.jr/sanwhcih.png" alt="sandwich"><span>sandwich</span></a>
+    <a class="card" href="/image.jr/Premiun%20Seafood.png" target="_blank"><img src="/image.jr/Premiun%20Seafood.png" alt="premium seafood"><span>premium seafood</span></a>
+  </main>
+  <footer>© Catering JR</footer>
+</body>
+</html>
